@@ -1,0 +1,29 @@
+;; -*- mode:lisp -*-
+
+;;; copy to $HOME/.lemrc
+
+(in-package :lem-user)
+
+;;(load-theme "emacs-light")
+(load-theme "emacs-dark")
+
+(setf *scroll-recenter-p* t)
+(setf (variable-value 'truncate-lines :global) nil)
+(setf (variable-value 'lem.line-numbers:line-numbers :global) t)
+
+(in-package :lem)
+
+;; Key Bindings
+(define-key *global-keymap* "M-o" 'other-window)
+(define-key *global-keymap* "M-i" 'delete-other-windows)
+(define-key *global-keymap* "M-u" 'split-active-window-vertically)
+(define-key *global-keymap* "M-z" 'query-replace)
+(define-key *global-keymap* "C-x C-l" 'start-lisp-repl)
+(define-key *global-keymap* "C-z" 'undo)
+
+
+
+
+
+
+
