@@ -1,4 +1,4 @@
-#!/sh/bash
+#!/bin/bash
 
 # Install
 sudo yum groupinstall 'Development Tools' && sudo yum install curl git gcc
